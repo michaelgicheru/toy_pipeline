@@ -31,6 +31,6 @@ list(
   ),
   tar_render(
     analyse_data,
-    "analysis.Rmd"
+    "index.Rmd"
   )
 )
