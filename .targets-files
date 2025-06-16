@@ -1,0 +1,9 @@
+.targets-files
+_targets/.gitignore
+_targets/meta/meta
+_targets/meta/process
+_targets/meta/progress
+_targets/objects/clean_data
+_targets/objects/companies
+_targets/objects/raw_data
+index.html

@@ -1,0 +1,42 @@
+---
+title: "Insurance Service Result"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(fig.width = 15, fig.height = 7)
+```
+
+Let's load the datasets
+
+```{r, load}
+tar_load(clean_data)
+tar_load(companies)
+```
+
+Create the plot for all the companies defined 
+
+# Plots {.tabset}
+
+```{r, plots}
+#| results: "asis"
+#| echo: false
+res <- lapply(companies, \(x) {
+  knitr::knit_child(
+    text = c(
+      '\n',
+      '## `r x`',
+      '\n',
+      '```{r, echo = F}',
+      'print(make_plot(.data = clean_data, company = x))',
+      '```'
+    ),
+    envir = environment(),
+    quiet = TRUE
+  )
+})
+
+cat(unlist(res), sep = "\n")
+```
