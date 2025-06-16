@@ -1,9 +1,7 @@
 name|type|parent|branches|progress
-raw_data|stem|raw_data|0|dispatched
-raw_data|stem|raw_data|0|completed
+raw_data|stem|raw_data|0|skipped
 companies|stem|companies|0|dispatched
 companies|stem|companies|0|completed
-clean_data|stem|clean_data|0|dispatched
-clean_data|stem|clean_data|0|completed
+clean_data|stem|clean_data|0|skipped
 analyse_data|stem|analyse_data|0|dispatched
 analyse_data|stem|analyse_data|0|completed
